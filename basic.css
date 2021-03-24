@@ -179,6 +179,7 @@
 }
 
 .footer_logo {
+    padding-left: 15px;
     color: rgb(49, 48, 48);
     font-weight: 800;
     font-size: 25px;
@@ -235,7 +236,7 @@
     display: inline-block;
     position: relative;
     padding: 0 0 9px;
-    width: 830px;
+    width: 850px;
     color: #656565;
     text-align: left;
     list-style: none;
@@ -246,9 +247,10 @@
     position: relative;
     display: inline-block;
     margin: 5px 0 0 6px;
-    padding-left: 11px;
+    padding-left: 8px;
     font-size: 13px;
     line-height: 19px;
+    color: #656565;
 }
 
 .company_info li::after {
@@ -259,4 +261,55 @@
     width: 1px;
     height: 11px;
     background-color: #ccc;
+}
+
+.company_info .first::after {
+    padding: 0;
+    margin: 0;
+    width: 0
+}
+
+.sns_list {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 88px;
+}
+
+.sns_list i {
+    font-size: 35px;
+}
+
+.fa-blogger {
+    color: rgb(37, 201, 37);
+}
+
+.fa-pen-square {
+    color: rgb(37, 201, 37);
+}
+
+.fa-facebook-square {
+    color: rgb(66, 76, 161);
+}
+
+.fa-twitter-square {
+    color: rgb(0, 153, 255);
+}
+
+.fa-instagram-square {
+    color: rgb(231, 99, 180);
+}
+
+.p_caution {
+    display: block;
+    margin: 27px auto 0;
+    padding-left: 12px;
+    line-height: 22px;
+}
+
+.copyright {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    font-size: 12px;
 }
