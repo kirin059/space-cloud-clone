@@ -190,27 +190,68 @@
     position: absolute;
     right: 0;
     bottom: 25px;
-    padding-left: 0;
     font-size: 15px;
     list-style: none;
 }
 
 .link_info li {
     display: inline-block;
-    padding-left: 0;
     margin-left: 0;
-    margin: 5px 0 0 6px;
+    margin: 5px 0 0 0px;
     font-size: 13px;
 }
 
 .link_info li a {
     display: inline-block;
+    padding: 0 10px 0;
     color: #535353;
     cursor: pointer;
     text-decoration: none;
 }
 
 .link_info li::after {
+    content: "";
+    position: absolute; 
+    top: 7px;
+    width: 1px;
+    height: 16px;
+    background-color: #ccc;
+}
+
+.link_info li:last-child::after {
+    width: 0;
+}
+
+/* footer - bottom */
+.footer_bottom {
+    display: block;
+    padding: 25px 0 0;
+    margin: 0;
+    border-bottom: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.company_info {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 9px;
+    width: 830px;
+    color: #656565;
+    text-align: left;
+    list-style: none;
+    border-bottom: 0;
+}
+
+.company_info li {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0 0 6px;
+    padding-left: 11px;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.company_info li::after {
     content: "";
     position: absolute;
     left: 0;
