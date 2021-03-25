@@ -1,5 +1,7 @@
 'use strict';
 
+// main slider
+
 let slides = document.querySelectorAll('.slides li');
 let next = document.getElementsByClassName('next');
 let prev = document.getElementsByClassName('prev');
@@ -38,3 +40,30 @@ prev.addEventListener('click', (e) => {
     //clearInterval(showSlides);
     //setTimeout(showSlides, 4000);
 });
+
+
+
+// recommend slider
+
+let slide = document.querySelectorAll('.img_box');
+let nextBtn = document.querySelector('nextBtn');
+let prevBtn = document.querySelector('prevBtn');
+
+handleSlide()
+
+function handleSlide() {
+    for (let i = 0; i < slide.length; i++) {
+        //console.log(slides)
+        slides[i].style.display = "none";
+    }
+    slideIndex += 3;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // Change image every 4 seconds
+}
+}
