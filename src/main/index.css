@@ -121,7 +121,7 @@
     background-color: #f6f6f6;
 }
 
-.space_list_wrap h2, .recommend_list_wrap h2 {
+.space_list_wrap h2, .recommend_list_wrap h2, .review_list_wrap h2 {
     font-size: 34px;
     font-weight: 900;
     font-family: NanumBarunGothicBold,sans-serif;
@@ -219,6 +219,8 @@
     position: relative;
     overflow: hidden;
     padding-top: 56.2%;
+    width: 370px;
+    height: 208px;
     background-color: #fff;
     cursor: pointer;
 }
@@ -321,23 +323,106 @@
  }
 
  .info_price_hour {
-    height: 23px;
+    height: 26px;
     padding-top: 3px;
     margin-top: 11px;
     color: #656565;
     font-size: 12px;
     overflow: hidden;
+    vertical-align: top;
  }
 
  .price {
     color: #6d3afb;
     font-size: 20px;
+    font-weight: 700;
     font-family: NanumBarunGothicBold,sans-serif; 
-    vertical-align: top;
  }
 
  .txt_unit {
     margin-left: 1px;
-    vertical-align: top;
+    vertical-align: middle;
     color: #656565;
  }
+
+ .info_number_love {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+    font-size: 12px;
+    min-width: 70px;
+ }
+
+ .number_maxUser, .number_review, .number_love  {
+    float: left;
+    position: relative;
+    padding-left: 18px;
+    margin-right: 6px;
+    font-size: 12px;
+    color: #656565;
+ }
+
+ .sp_icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -6px;
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    font-size: 0;
+    color: transparent;
+    line-height: 0;
+    background-size: 684px 663px;
+    background-image: url(../../img/08341ee.png);
+ }
+
+ .ico_review {
+    background-position: -459px -646px;
+}
+
+.ico_love {
+    background-position: -476px -646px;
+}
+
+/* 이용자 리뷰 */
+.review_list_wrap {
+    padding: 62px 0 60px 0;
+    background: #fff;
+    border-top: 1px solid #ebebeb;
+}
+
+.review_list_wrap p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: NanumBarunGothicUltralight,sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.item_box {
+    position: relative;
+    height: 833px;
+    width: 1158px;
+    margin: 30px auto;
+}
+
+
+
+.more {
+    display: block;
+    width: 1158px;
+    margin: 0 auto 70px;
+    padding: 21px 0 20px;
+    background-color: #fff;
+    color: #656565;
+    border: 1px solid #eee;
+    cursor: pointer;
+    text-align: center;
+}
+
+.more span::after {
+    content: "➕";
+    padding-left: 5px;
+}
+
