@@ -407,7 +407,56 @@
     margin: 30px auto;
 }
 
+.box_space {
+    position: absolute;
+    width: 33.333%;
+    margin-top: 0;
+    padding: 13px;
+    float: left;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 30px 21px 36px;
+}
 
+.box1 {
+    left: 0px;
+    top: 0px;
+    background-image: url(./img/review_1.jpg);
+}
+
+.box2 {
+    left: 385.984px;
+    top: 0px;
+    background-image: url(./img/review_2.jpg);
+}
+
+.box3 {
+    left: 771.968px;
+    top: 0px;
+    background-image: url(./img/review_3.jpeg);
+}
+
+.box4 {
+    left: 0px;
+    top: 286px;
+    background-image: url(./img/review_4.jpeg);
+}
+
+.box5 {
+    left: 771.968px;
+    top: 286px;
+    background-image: url(./img/review_5.jpg);
+}
+
+.box6 {
+    left: 385.984px;
+    top: 334px;
+    background-image: url(./img/review_6.jpg);
+}
 
 .more {
     display: block;
