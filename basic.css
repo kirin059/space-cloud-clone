@@ -163,6 +163,7 @@
 
 /* drop-down */
 .scroll_wrap {
+    display: none;
     position: fixed;
     right: 0;
     top: 0;
@@ -170,6 +171,10 @@
     height: 100%;
     background-image: #fafafa;
     z-index: 99999;
+}
+
+.scroll_wrap.active_nav {
+    display: block;
 }
 
 .profile {

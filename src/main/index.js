@@ -5,11 +5,12 @@
 let slides = document.querySelectorAll('.slides li');
 let next = document.getElementsByClassName('next');
 let prev = document.getElementsByClassName('prev');
+
 let slideIndex = 1;
 
 showSlides();
 
-function showSlides() {
+function showSlides(n) {
 
     for (let i = 0; i < slides.length; i++) {
         //console.log(slides)
@@ -66,4 +67,5 @@ function handleSlide() {
 
     setTimeout(showSlides, 3000); // Change image every 4 seconds
 }
-}
+
+
