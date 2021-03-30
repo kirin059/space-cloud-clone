@@ -163,7 +163,7 @@
 
 /* drop-down */
 .scroll_wrap {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: 362px;
@@ -180,7 +180,7 @@
     justify-content: center;
     align-items: center;
     width: 362px;
-    height: 170px;
+    height: 160px;
     background-color: rgb(254, 214, 54) ;
 }
 
@@ -209,12 +209,13 @@
     right: 17px;
     color: rgb(112, 77, 228);
     font-size: 30px;
+    cursor: pointer;
 }
 
 .menu_top {
     position: absolute;
     right: 0;
-    top: 170px;
+    top: 160px;
     display: flex;
     flex-direction: column;
     width: 362px;
@@ -233,6 +234,8 @@
 }
 
 .menu_top ul li {
+    display: flex;
+    flex-direction: column;
     float: left;
     width: 33.3%;
     height: 100%;
@@ -246,8 +249,77 @@
     color: #fff;
     background-color: rgb(112, 77, 228);
     text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 210px 0 25px;
+    line-height: 60px;
 }
 
+.menu_top ul li .fas, .menu_top ul li .fab {
+    padding-top: 20px;
+    font-size: 34px;
+    color: rgb(112, 77, 228);
+}
+
+.menu_top ul li span {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.menu-bottom {
+    background-color: #f6f6f6;
+    height: 100vh;
+    width: 362px;
+}
+
+.menu-bottom ul {
+    position: absolute;
+    top: 340px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+}
+
+.menu-bottom ul li {
+    color: #000;
+    display: block;
+    padding: 21px 25px 20px;
+    border-top: 1px solid #ebebeb;
+    background: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.menu-bottom ul li:first-child {
+    color: #6d3afb;
+}
+
+.menu-bottom ul li .fas {
+    position: absolute;
+    right: 20px;
+    color: #817e7e;
+}
+
+.center_move {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #6d3afb;
+    padding: 14px 0 13px;
+    background: #704de4;
+    color: #ffd014;
+    font-size: 18px;
+    text-align: center;
+}
+
+.center_move .fa-arrow-alt-circle-right {
+    font-size: 25px;
+    padding-left: 10px;
+}
 
 /* footer */
 
