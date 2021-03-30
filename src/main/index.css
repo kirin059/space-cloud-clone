@@ -402,7 +402,7 @@
 
 .item_box {
     position: relative;
-    height: 833px;
+    height: 740px;
     width: 1158px;
     margin: 30px auto;
 }
@@ -411,51 +411,73 @@
     position: absolute;
     width: 33.333%;
     margin-top: 0;
-    padding: 13px;
     float: left;
     height: 100%;
-    background-size: cover;
-    background-position: 50%;
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    /* border: 1px solid #ebebeb; */
     padding: 30px 21px 36px;
 }
 
-.box1 {
+.box1 .inner_img{
+    position: relative;
     left: 0px;
     top: 0px;
     background-image: url(./img/review_1.jpg);
+    background-size: cover;
+    background-position: 50%; /* (=center) */
+    height: 260px;
 }
 
-.box2 {
+.box2 .inner_img {
+    position: relative;
     left: 385.984px;
     top: 0px;
     background-image: url(./img/review_2.jpg);
+    background-size: cover;
+    background-position: 50%; /* (=center) */
+    height: 236px;
 }
 
-.box3 {
+.box3 .inner_img {
+    position: relative;
     left: 771.968px;
     top: 0px;
     background-image: url(./img/review_3.jpeg);
+    background-size: cover;
+    background-position: 50%; /* (=center) */
+    height: 260px;
 }
 
-.box4 {
+.box3 .inner_img::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box4 .inner_img {
+    position: relative;
     left: 0px;
     top: 286px;
     background-image: url(./img/review_4.jpeg);
+    background-size: cover;
+    background-position: 50%; /* (=center) */
+    height: 358px;
 }
 
-.box5 {
+.box5 .inner_img {
+    position: relative;
     left: 771.968px;
     top: 286px;
     background-image: url(./img/review_5.jpg);
+    background-size: cover;
+    background-position: 50%; /* (=center) */
+    height: 245px;
 }
 
 .box6 {
     left: 385.984px;
     top: 334px;
     background-image: url(./img/review_6.jpg);
+    height: 260px;
 }
 
 .more {
@@ -464,8 +486,8 @@
     margin: 0 auto 70px;
     padding: 21px 0 20px;
     background-color: #fff;
-    color: #656565;
-    border: 1px solid #eee;
+    color: #504f4f;
+    border: 1px solid rgb(216, 212, 212);
     cursor: pointer;
     text-align: center;
 }
