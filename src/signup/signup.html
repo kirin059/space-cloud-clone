@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link href="../../basic.css" rel="stylesheet" />
-    <link href="./login.css" rel="stylesheet" />
+    <link href="./signup.css" rel="stylesheet" />
     <script src="../../basic.js" defer></script>
     <title>스페이스클라우드</title>
 </head>
@@ -90,20 +90,20 @@
 
 
         <div class="main">
-            <h2>로그인</h2>
+            <h2>회원가입</h2>
             <section class="main_wrap">
-                <div class="login_container">
+                <div class="agree_container">
                     <div class="login_btn">
                         <div class="naver">
-                            <img src="img/naver_logo.png" alt="naver logo" />
+                            <img src="../login/img/naver_logo.png" alt="naver logo" />
                             네이버로 로그인
                         </div>
                         <div class="kakao">
-                            <img src="./img/Kakao_logo.jpg" alt="kakao logo" />
+                            <img src="../login/img/Kakao_logo.jpg" alt="kakao logo" />
                             카카오로 로그인
                         </div>
                         <div class="apple">
-                            <img src="./img/Apple_logo.png" alt="apple logo" />
+                            <img src="../login/img/Apple_logo.png" alt="apple logo" />
                             Apple로 로그인
                         </div>
                     </div>
@@ -115,6 +115,10 @@
                     <div class="input_login">
                         <ul class="login_info">
                             <li>
+                                <label for="name"></label>
+                                <input id="name" type="text" placeholder="닉네임" />
+                            </li>
+                            <li>
                                 <label for="email"></label>
                                 <input id="email" type="text" placeholder="이메일" />
                             </li>
@@ -122,20 +126,36 @@
                                 <label for="password"></label>
                                 <input id="password" type="text" placeholder="비밀번호" />
                             </li>
+                            <li>
+                                <label for="password2"></label>
+                                <input id="password2" type="text" placeholder="비밀번호 확인" />
+                            </li>
                         </ul>
                     </div>
-                    <div class="memory_box">
-                        <div class=".memory_login">
-                            <input id="memory" type="checkbox" />
-                            <label for="checkbox">로그인 기억하기</label>
+                    <div class="agree_box">
+                        <div class="agree_all">
+                            <input id="agree" type="checkbox" />
+                            <label for="agree">아래 약관에 모두 동의합니다.</label>
                         </div>
-                        <span>비밀번호 찾기</span>
+                        <div>
+                            <input id="agree" type="checkbox" />
+                            <label for="agree"><a href="#">서비스 이용약관 (필수)</a></label>
+                        </div>
+                        <div>
+                            <input id="agree" type="checkbox" />
+                            <label for="agree"><a href="#">개인정보 처리 방침(필수)</a></label>
+                        </div>
+                        <div>
+                            <input id="agree" type="checkbox" />
+                            <label for="agree">이벤트 등 프로모션 알림 SNS 수신 (선택)</label>
+                        </div>
+                        <div>
+                            <input id="agree" type="checkbox" />
+                            <label for="agree">이벤트 등 프로모션 알림 메일 수신 (선택)</label>
+                        </div>
                     </div>
-                    <button type="submit">이메일로 로그인</button>
-                    <div class="no_mem">
-                        <p>아직 스페이스클라우드 회원이 아니신가요?</p>
-                        <a href="../signup/signup.html">회원가입</a>
-                    </div>
+                    <button type="submit">회원가입</button>
+
                 </div>
             </section>
         </div>
