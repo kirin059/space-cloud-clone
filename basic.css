@@ -203,9 +203,17 @@
     cursor: pointer;
 }
 
-.profile span strong{
+.profile span a {
     padding-left: 20px;
     font-weight: 900;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: transform
+}
+
+.profile span a:hover {
+    transform: scale(2);
 }
 
 .fa-arrow-right {
