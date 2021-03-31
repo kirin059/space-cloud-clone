@@ -5,8 +5,8 @@
 }
 
 .main h2 {
-    padding: 40px 0;
-    font-size: 34px;
+    padding: 30px 0 10px;
+    font-size: 30px;
     font-weight: 900;
     font-family: NanumBarunGothicBold,sans-serif;
     text-align: center;
@@ -37,13 +37,13 @@
     display: block;
     position: relative;
     margin-top: 16px;
-    height: 56px;
+    height: 50px;
     border: 1px solid #000;
     border-radius: 5px;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
-    line-height: 56px;
+    line-height: 50px;
 }
 
 .login_btn .naver img {
@@ -76,4 +76,72 @@
     width: 100%;
     height: 1px;
     background: #ebebeb;
+}
+
+.or span {
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+    color: #000;
+    font-size: 14px;
+    background: #fff;
+}
+
+.input_login {
+    padding-top: 20px;
+}
+
+.login_info {
+    list-style: none;
+}
+
+.login_info li {
+    position: relative;
+    font-size: 14px;
+}
+
+.login_info li input {
+    display: inline-block;
+    position: relative;
+    padding: 0 16px;
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.login_info li input:last-child {
+    margin-top: 16px;
+}
+
+.memory_box {
+    margin-top: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_container button {
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin-top: 24px;
+    background: #ffd014;
+    color: #000;
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.no_mem {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: #656565;
+    font-size: 14px;
+}
+
+.no_mem  p {
+    padding-right: 15px;
 }
