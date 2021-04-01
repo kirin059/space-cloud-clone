@@ -145,3 +145,24 @@
 .no_mem  p {
     padding-right: 15px;
 }
+
+
+/* 유효성 검사 */
+small {
+    visibility: hidden;
+    text-align: left;
+    font-size: small;
+    color: red;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.error small {
+    visibility: visible;
+}

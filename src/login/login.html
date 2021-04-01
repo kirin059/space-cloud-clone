@@ -10,6 +10,7 @@
     <link href="../../basic.css" rel="stylesheet" />
     <link href="./login.css" rel="stylesheet" />
     <script src="../../basic.js" defer></script>
+    <script src="./login.js" defer></script>
     <title>스페이스클라우드</title>
 </head>
 
@@ -117,10 +118,12 @@
                             <li>
                                 <label for="email"></label>
                                 <input id="email" type="text" placeholder="이메일" />
+                                <small>Error message</small>
                             </li>
                             <li>
                                 <label for="password"></label>
-                                <input id="password" type="text" placeholder="비밀번호" />
+                                <input id="password" type="password" placeholder="비밀번호" />
+                                <small>Error message</small>
                             </li>
                         </ul>
                     </div>
@@ -131,7 +134,7 @@
                         </div>
                         <span>비밀번호 찾기</span>
                     </div>
-                    <button type="submit">이메일로 로그인</button>
+                    <button id="submit" type="submit">이메일로 로그인</button>
                     <div class="no_mem">
                         <p>아직 스페이스클라우드 회원이 아니신가요?</p>
                         <a href="../signup/signup.html">회원가입</a>
