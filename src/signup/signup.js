@@ -81,3 +81,41 @@ btn.addEventListener("click", function (e) {
         checkPasswordsMatch(password, password2);
     }
 });
+
+
+// check box
+
+const allBtn = document.querySelector('.check_all');
+const checkboxes = document.querySelectorAll('input[name="check"]');
+//console.log(checkboxes)
+
+
+
+function selectAll() {
+
+    checkboxes.forEach((checkbox) => {
+        if (allBtn.checked) {
+            checkbox.checked = true;
+        } else {
+            checkbox.checked = false;
+        }
+    })
+}
+
+allBtn.addEventListener('click', selectAll);
+
+
+function checkSelectAll() {
+
+    // 선택된 체크박스
+    const checked = document.querySelectorAll('input[name="check"]:checked');
+
+    if (checkboxes.length === checked.length) {
+        allBtn.checked = true;
+    } else {
+        allBtn.checked = false;
+    }
+}
+
+
+checkboxes.forEach(box => box.addEventListener('click', checkSelectAll))
