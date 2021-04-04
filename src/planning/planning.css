@@ -1,0 +1,78 @@
+.main {
+    padding-top: 62px;
+    padding-bottom: 30px;
+    background: #f6f6f6;
+}
+
+.main h2{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    letter-spacing: -.5px;
+    line-height: 1.2;
+    color: #000;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.main p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+.theme_list {
+    width: 1184px;
+    margin: 30px auto;
+}
+
+.box_space {
+    display: inline-block;
+    margin: 13px;
+    width: 365px;
+    height: 365px;
+}
+
+.box1 {
+    background-image: url(./img/box1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box2 {
+    background-image: url(./img/box2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.box3 {
+    background-image: url(./img/box3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box4 {
+    background-image: url(./img/box4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box5 {
+    background-image: url(./img/box5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box6 {
+    background-image: url(./img/box6.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
